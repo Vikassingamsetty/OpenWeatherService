@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataUtil {
+open class DataUtil {
     static let shared = DataUtil()
     private init() { }
     

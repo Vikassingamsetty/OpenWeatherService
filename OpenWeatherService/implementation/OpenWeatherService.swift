@@ -13,7 +13,7 @@ open class OpenWeatherService: WeatherServiceProtocol {
     static let shared = OpenWeatherService()
     
     // replace with your own apiKey
-    internal var apiKey = "d4ceceb6cea308f9458e02a7ddb693cf"
+    public var apiKey = "d4ceceb6cea308f9458e02a7ddb693cf"
     
     private let httpProtocol = "https"
     private let domain = "api.openweathermap.org"
@@ -33,7 +33,7 @@ open class OpenWeatherService: WeatherServiceProtocol {
     
     
     
-    func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>)-> Void) {
+    public func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>)-> Void) {
         switch query.type {
         case .city:
             searchByCity(query) { result in

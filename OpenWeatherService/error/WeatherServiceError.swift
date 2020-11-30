@@ -9,7 +9,7 @@ import Foundation
 
 let HttpStatusSuccess = 200
 
-enum WeatherServiceError: Error {
+public enum WeatherServiceError: Error {
     case invalidParam
     case invalidParamFormat
     case GPSNotAvailable
@@ -32,7 +32,7 @@ extension WeatherServiceError: LocalizedError {
 }
 
 extension WeatherServiceError: Equatable {
-    static func == (lhs: WeatherServiceError, rhs: WeatherServiceError)->Bool {
+    static public func == (lhs: WeatherServiceError, rhs: WeatherServiceError)->Bool {
         return lhs.localizedDescription == rhs.localizedDescription
     }
 }

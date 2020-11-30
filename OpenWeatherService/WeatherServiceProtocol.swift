@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-open protocol WeatherServiceProtocol {
+public protocol WeatherServiceProtocol {
     var apiKey: String { get set }
     func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>)-> Void)
 }

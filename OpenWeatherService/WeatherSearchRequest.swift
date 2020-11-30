@@ -8,14 +8,14 @@
 import Foundation
 import CoreLocation
 
-open enum WeatherSearchRequestType: Int, Codable, CaseIterable {
+public enum WeatherSearchRequestType: Int, Codable, CaseIterable {
     case city
     case zipCode
     case gpsCoord
     case unknown
 }
 
-open struct WeatherSearchRequest {
+public struct WeatherSearchRequest {
     var city: String?
     var zip: String?
     var coord: CLLocationCoordinate2D?

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OpenWeatherServiceMockUtil {
+open class OpenWeatherServiceMockUtil {
     
     func mockWeatherForecast()-> WeatherForecast {
         return atlanta()

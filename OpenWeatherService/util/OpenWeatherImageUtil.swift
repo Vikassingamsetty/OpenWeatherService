@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OpenWeatherImageUtil {
+open class OpenWeatherImageUtil {
     
     private let httpProtocol = "https"
     private let imageDomain = "openweathermap.org"

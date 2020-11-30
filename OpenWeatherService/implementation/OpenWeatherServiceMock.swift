@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 open class OpenWeatherServiceMock: WeatherServiceProtocol {
-    var apiKey: String = ""
+    public var apiKey: String = ""
     
     static let shared = OpenWeatherServiceMock()
     let mockLocation = OpenWeatherServiceMockUtil().mockWeatherForecast()
@@ -17,7 +17,7 @@ open class OpenWeatherServiceMock: WeatherServiceProtocol {
     
     private init() { }
     
-    func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>) -> Void) {
+    public func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>) -> Void) {
         switch query.type {
         case .city:
             if mockLocation.name == query.city {

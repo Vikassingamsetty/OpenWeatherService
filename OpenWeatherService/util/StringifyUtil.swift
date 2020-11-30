@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StringifyUtil {
+open class StringifyUtil {
     
     static let shared = StringifyUtil()
     private init() {}

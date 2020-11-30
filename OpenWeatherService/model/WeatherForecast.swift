@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherForecast: Codable {
+public struct WeatherForecast: Codable {
     let id: Int
     let name: String
     let timezone: Double
@@ -29,7 +29,7 @@ struct WeatherForecast: Codable {
     }
 }
 
-struct Coord: Codable {
+public struct Coord: Codable {
     let longitude: Double
     let latitude: Double
     
@@ -43,14 +43,14 @@ struct Coord: Codable {
     }
 }
 
-struct Weather: Codable {
+public struct Weather: Codable {
     let id: Int
     let main: String
     let description: String
     let icon: String
 }
 
-struct Temperature: Codable {
+public struct Temperature: Codable {
     let temp: Double
     let feelsLike: Double
     let tempMin: Double
@@ -68,12 +68,12 @@ struct Temperature: Codable {
     }
 }
 
-struct Wind: Codable {
+public struct Wind: Codable {
     let speed: Double
     let deg: Int
 }
 
-struct Country: Codable {
+public struct Country: Codable {
     let countryCode: String?
     let sunrise: Double
     let sunset: Double
