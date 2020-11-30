@@ -21,7 +21,7 @@ public struct WeatherSearchRequest {
     var coord: CLLocationCoordinate2D?
     var type: WeatherSearchRequestType
     
-    init(city: String? = nil, zip: String? = nil, coord: CLLocationCoordinate2D? = nil, type: WeatherSearchRequestType) {
+    public init(city: String? = nil, zip: String? = nil, coord: CLLocationCoordinate2D? = nil, type: WeatherSearchRequestType) {
         self.city = city
         self.zip = zip
         self.coord = coord
