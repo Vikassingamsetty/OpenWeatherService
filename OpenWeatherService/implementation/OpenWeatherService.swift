@@ -13,7 +13,7 @@ open class OpenWeatherService: WeatherServiceProtocol {
     static let shared = OpenWeatherService()
     
     // replace with your own apiKey
-    private let apiKey = "d4ceceb6cea308f9458e02a7ddb693cf"
+    internal var apiKey = "d4ceceb6cea308f9458e02a7ddb693cf"
     
     private let httpProtocol = "https"
     private let domain = "api.openweathermap.org"
@@ -30,6 +30,8 @@ open class OpenWeatherService: WeatherServiceProtocol {
         sessionConfig.timeoutIntervalForResource = timeout
         session = URLSession(configuration: sessionConfig)
     }
+    
+    
     
     func searchBy(query: WeatherSearchRequest, completionHandler: @escaping (Result<WeatherForecast, WeatherServiceError>)-> Void) {
         switch query.type {

@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 open class OpenWeatherServiceMock: WeatherServiceProtocol {
+    var apiKey: String = ""
     
     static let shared = OpenWeatherServiceMock()
     let mockLocation = OpenWeatherServiceMockUtil().mockWeatherForecast()
