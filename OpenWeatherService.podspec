@@ -18,6 +18,8 @@ Pod::Spec.new do |spec|
   spec.name         = "OpenWeatherService"
   spec.version      = "1.0.0"
   spec.summary      = "Search API integration for https://openweathermap.org/api"
+  spec.ios.deployment_target = "12.0"
+  spec.swift_version   = "5.0"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,7 +28,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Search API integration for https://openweathermap.org/api. Build a weather app with ease, using this API integraton to fetch weather forecast from https://openweathermap.org/api."
 
-  spec.homepage     = "http://github.com/xuwei/OpenWeatherService"
+  spec.homepage     = "https://github.com/xuwei/OpenWeatherService"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://github.com/xuwei/OpenWeatherService.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/xuwei/OpenWeatherService.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
