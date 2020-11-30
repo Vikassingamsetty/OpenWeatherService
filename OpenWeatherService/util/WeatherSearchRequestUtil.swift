@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WeatherSearchRequestUtil {
+open class WeatherSearchRequestUtil {
     
     let zipcodeCharacters: CharacterSet = CharacterSet(charactersIn: "0123456789")
     let cityCharacters: CharacterSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyz ")
